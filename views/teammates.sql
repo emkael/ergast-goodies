@@ -1,5 +1,6 @@
 -- all driver pairs listed in the results as driving for the same constructor
 -- in the same race, for every race
+DROP VIEW IF EXISTS teammates;
 CREATE VIEW teammates AS
    SELECT r1.raceId, r1.constructorId,
       r1.driverId driver1, r1.position d1position,
@@ -13,6 +14,7 @@ CREATE VIEW teammates AS
          AND r1.driverId <> r2.driverId;
 
 -- tally of results from the previous view
+DROP VIEW IF EXISTS teammate_tally;
 CREATE VIEW teammate_tally AS
    SELECT CONCAT(d1.forename, " ", d1.surname) driver,
       COALESCE(SUM(teammates.d1position < teammates.d2position), 0) wins,

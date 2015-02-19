@@ -1,5 +1,6 @@
 -- all drivers listed in the standings at position = 1
 -- for last race of each season
+DROP VIEW IF EXISTS world_drivers_champions;
 CREATE VIEW world_drivers_champions AS
    SELECT drivers.*, races.year
    FROM driverStandings
@@ -10,6 +11,7 @@ CREATE VIEW world_drivers_champions AS
 
 -- all constructors listed in the standings at position = 1
 -- for last race of each season
+DROP VIEW IF EXISTS world_constructors_champions;
 CREATE VIEW world_constructors_champions AS
    SELECT constructors.*, races.year
    FROM constructorStandings

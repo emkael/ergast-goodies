@@ -1,4 +1,5 @@
 -- constructors' standings at the end of each season
+DROP VIEW IF EXISTS constructor_championship_results;
 CREATE VIEW constructor_championship_results AS
    SELECT * FROM constructorStandings
    WHERE raceId IN (
@@ -6,6 +7,7 @@ CREATE VIEW constructor_championship_results AS
    );
 
 -- every driver-constructor pair for each season
+DROP VIEW IF EXISTS season_driver_constructor;
 CREATE VIEW season_driver_constructor AS
    SELECT results.driverId, results.constructorId, races.year
    FROM results
@@ -13,6 +15,7 @@ CREATE VIEW season_driver_constructor AS
    GROUP BY results.driverId, results.constructorId, races.year;
 
 -- every team each driver would go to drive for in the following year
+DROP VIEW IF EXISTS next_season_driver_constructor;
 CREATE VIEW next_season_driver_constructor AS
    SELECT sdc.*, sdc2.constructorId AS nextConstructor
    FROM season_driver_constructor sdc
@@ -21,6 +24,7 @@ CREATE VIEW next_season_driver_constructor AS
 
 -- every driver team switch with both cosntructors' positions
 -- for the initial season
+DROP VIEW IF EXISTS driver_team_switches;
 CREATE VIEW driver_team_switches AS
    SELECT nsdc.driverId, nsdc.year, nsdc.constructorId, nsdc.nextConstructor,
       cs.position AS prevPosition, cs2.position AS nextPosition

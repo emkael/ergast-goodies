@@ -1,11 +1,13 @@
 -- view holds distinct driver-race entries
 -- (eliminating duplicate race entries from shared drives)
+DROP VIEW IF EXISTS driver_races;
 CREATE VIEW driver_races AS
    SELECT driverId, raceId
    FROM results
    GROUP BY driverId, raceId;
 
 -- view aggregates races by season for each driver
+DROP VIEW IF EXISTS driver_season_races;
 CREATE VIEW driver_season_races AS
    SELECT driver_races.driverId, races.year,
       GROUP_CONCAT(driver_races.raceId
@@ -16,12 +18,14 @@ CREATE VIEW driver_season_races AS
    GROUP BY driver_races.driverId, races.year;
 
 -- view aggregates races by season
+DROP VIEW IF EXISTS season_races;
 CREATE VIEW season_races AS
    SELECT year, GROUP_CONCAT(raceId ORDER BY raceId ASC) AS races
    FROM races
    GROUP BY year;
 
 -- selecting only driver-season pairs with all races in a season
+DROP VIEW IF EXISTS full_season_drivers;
 CREATE VIEW full_season_drivers AS
    SELECT driver_season_races.driverId, driver_season_races.year
    FROM season_races
