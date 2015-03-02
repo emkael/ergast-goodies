@@ -5,3 +5,6 @@ UPDATE circuits SET lat = 36.11617, lng = -115.1745 WHERE circuitRef = 'las_vega
 UPDATE circuits SET lat = 47.95, lng = 0.2242312 WHERE circuitRef = 'lemans';
 UPDATE circuits SET lat = 28.3468, lng = 77.5331232 WHERE circuitRef = 'buddh';
 UPDATE circuits SET country = 'USA' WHERE country = 'United States';
+
+UPDATE results SET grid = 15 WHERE resultId = 2939; -- Nick Heidfeld, Australia 2000
+
