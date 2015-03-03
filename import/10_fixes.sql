@@ -8,3 +8,4 @@ UPDATE circuits SET country = 'USA' WHERE country = 'United States';
 
 UPDATE results SET grid = 15 WHERE resultId = 2939; -- Nick Heidfeld, Australia 2000
 
+UPDATE drivers SET dob = '1954-01-24' WHERE driverId = 189; -- Jo Gartner
