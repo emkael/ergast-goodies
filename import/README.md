@@ -15,11 +15,11 @@ Requirements
 Usage
 =====
 
-    ./00_base_import.sh [MYSQL PARAMETERS]
+    ./00_base_import.sh [MYSQL_PARAMETERS]
 
-    ./01_integrity_import.sh [MYSQL PARAMETERS]
+    ./01_integrity_import.sh [MYSQL_PARAMETERS]
 
-    mysql [MYSQL PARAMETERS] < ./10_fixes.sql
+    mysql [MYSQL_PARAMETERS] < ./10_fixes.sql
 
 
 Under the hood
