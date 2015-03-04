@@ -3,7 +3,7 @@ Overview
 
 import provides wrapper scripts to import the [Ergast](http://ergast.com/mrd/db) database dump to local database, and apply technical and factual fixes.
 
-import is part of [ergast-goodies](README.md) toolset.
+import is part of [ergast-goodies](../README.md) toolset.
 
 Requirements
 ============
