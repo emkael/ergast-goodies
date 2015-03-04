@@ -10,7 +10,7 @@ Requirements
 
 * pushd/pop for sane working directory management (the script works in its own directory)
 * mysql command-line client
-* [fetcher](fetcher/README.md) (optional)
+* [fetcher](../fetcher/README.md) (optional)
 
 Usage
 =====
@@ -29,9 +29,9 @@ Under the hood
 
 Running `00_base_import.sh` imports just the basic, raw Ergast dump. If you already have the database copied locally, you may as well skip it.
 
-The script looks for f1db.sql dump in [fetcher](fetcher/README.md)'s directory and feeds the `mysql` command with its content, relaying all command line parameters to `mysql`.
+The script looks for f1db.sql dump in [fetcher](../fetcher/README.md)'s directory and feeds the `mysql` command with its content, relaying all command line parameters to `mysql`.
 
-If the DB dump is not present, the script attempts to fetch it via [fetcher](fetcher/README.md).
+If the DB dump is not present, the script attempts to fetch it via [fetcher](../fetcher/README.md).
 
 The `01_integrity_import.sh` script does the heavy lifting of improving the database under the hood, so it could be used with modern RDBMS techniques. Its main purpose is to create indexes and proper foreign keys constraints in the database.
 
