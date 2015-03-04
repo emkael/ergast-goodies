@@ -14,6 +14,8 @@ The set consists of three tools:
 
 Please refer to specific README files for details on the tools.
 
+Note that all of these work with the Formula One database. I haven't tested them against the Formula E dumps, also provided by Ergast, in any way.
+
 Requirements
 ============
 

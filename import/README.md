@@ -42,3 +42,5 @@ All the script does is running all the 01?_*.sql scripts against selected databa
 * `01c_constraints.sql` - creating foreign key constraints on all foreign keys in the database
 
 Provided, there's also the `10_fixes.sql` SQL script. It contains fixes for factual errors in the database which have been [reported upstream](http://ergast.com/mrd/bugs), but are yet to have fixes available in the dump.
+
+Note that some data in the original database could easily be normalized - countries, nationalities and such things would work beatifully in a dictionary. I've decided not to include any such normalization for backwards compatibility - all of the queries against the original, vanilla database, work identically against the tweaked database.
