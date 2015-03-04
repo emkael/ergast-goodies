@@ -5,7 +5,7 @@ fetcher keeps the local copy of Ergast database dump (available from [Ergast web
 
 The database dump is also slightly altered on unpacking, to get rid of MyISAM table storage engine, hard-coded in the dump. This allows an easy import into other storage engine database, like InnoDB.
 
-fetcher is part of [ergast-goodies](README.md) toolset.
+fetcher is part of [ergast-goodies](../README.md) toolset.
 
 Requirements
 ============
