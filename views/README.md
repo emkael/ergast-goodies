@@ -1,9 +1,9 @@
 Overview
 ========
 
-views are jus a bunch of SQLs with view definitions for the [Ergast](http://ergast.com/mrd/db) database dump.
+views are just a bunch of SQLs with view definitions for the [Ergast](http://ergast.com/mrd/db) database dump.
 
-views are part of [ergast-goodies](README.md) toolset.
+views are part of [ergast-goodies](../README.md) toolset.
 
 Requirements
 ============
