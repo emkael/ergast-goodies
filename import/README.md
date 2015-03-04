@@ -35,7 +35,7 @@ If the DB dump is not present, the script attempts to fetch it via [fetcher](../
 
 The `01_integrity_import.sh` script does the heavy lifting of improving the database under the hood, so it could be used with modern RDBMS techniques. Its main purpose is to create indexes and proper foreign keys constraints in the database.
 
-All the script does is running all the 01?_*.sql scripts against selected database, in alphabetical order (relying on bash wildcard expansion, [which is supposed to guarantee alphabetical order](http://serverfault.com/questions/122737/in-bash-are-wildcard-expansions-guaranteed-to-be-in-order). The SQL scripts are:
+All the script does is running all the `01?_*.sql` scripts against selected database, in alphabetical order (relying on bash wildcard expansion, [which is supposed to guarantee alphabetical order](http://serverfault.com/questions/122737/in-bash-are-wildcard-expansions-guaranteed-to-be-in-order). The SQL scripts are:
 
 * `01a_integrity_fixes.sql` - fixing some of the values which would otherwise conflict with creating foreign key constraints (usually temporarily, since these issues are reported to the upstream Ergast maintainers)
 * `01b_indexes.sql` - creating indexes on some of the columns (chosen arbirtarily, but hopefully using common sense)
