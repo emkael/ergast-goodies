@@ -22,7 +22,7 @@ CREATE VIEW next_season_driver_constructor AS
       LEFT JOIN season_driver_constructor sdc2
          ON (sdc.year = (sdc2.year - 1)) AND (sdc.driverId = sdc2.driverId);
 
--- every driver team switch with both cosntructors' positions
+-- every driver team switch with both constructors' positions
 -- for the initial season
 DROP VIEW IF EXISTS driver_team_switches;
 CREATE VIEW driver_team_switches AS
