@@ -32,3 +32,13 @@ CREATE VIEW full_season_drivers AS
       JOIN driver_season_races
          ON (season_races.races = driver_season_races.races)
             AND (season_races.year = driver_season_races.year);
+
+-- average grid age for every race
+DROP VIEW IF EXISTS average_grid_age;
+CREATE VIEW average_grid_age AS
+   SELECT AVG(DATEDIFF(races.date, drivers.dob)) average_age,
+          CONCAT(races.year, ' ', races.name) race, races.date
+   FROM driver_races
+      JOIN races ON driver_races.raceId = races.raceId
+      JOIN drivers ON drivers.driverId = driver_races.driverId
+   GROUP BY races.raceId;
