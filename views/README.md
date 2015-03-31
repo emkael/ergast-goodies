@@ -22,7 +22,7 @@ Under the hood
 
 The convention for all the views is to use `underscored_lowercase_names` for views and newly added fields, to distinguish ergast-goodies input from the original structure (which uses `camelCase` naming).
 
-The views are split into files, which are fully independent, i.e. refer only to the original tables (or to each other, but only in order they're defined within the file).
+The views are split into files, which are fully independent, i.e. refer only to the original tables (or to each other, but only in order they're defined within the file), with the exception of `champion_teammates.sql`, which depends on both `champions.sql` and `teammates.sql`.
 
 `career_length.sql`
 -------------------
@@ -54,6 +54,8 @@ A bunch of views resulting in a list of drivers who drove every race of a season
 
 [Here's an example of use for these views.](http://www.reddit.com/r/formula1/comments/2v7hip/in_which_years_the_grid_featured_the_most_drivers/cofuaxt?context=1)
 
+Additional view (`average_grid_age`), which presents average grid age (in days) for each race in the database, is included in the package.
+
 `podiums.sql`
 -------------
 
@@ -84,3 +86,12 @@ To arrive at that set of data, some views are created:
 * `constructor_championship_results` - a simple listing of finishing position in the Constructors' for each constructor every season (this assumes the same thing about ascending raceId values as views from `champions.sql`)
 * `season_driver_constructor` - every triplet of year, driver and constructor the driver drove for in specified year
 * `next_season_driver_constructor` - the strangest one, every triplet of year, driver and constructor the driver drove for in a *following* year; finding use for that view without the context is left as an exercise for the reader
+
+`champion_teammates.sql`
+------------------------
+
+A single view presenting double-WDC teammate pairings (for drivers with WDC titles at the time of the pairing) with their WDC count at the time of the pairing.
+
+[Example use](http://www.reddit.com/r/formula1/comments/2yfm53/ive_matured_says_hamilton_as_he_uses_ferrari_as_a/cp95w6y?context=1).
+
+Depends on both `champions.sql` (`world_drivers_champions` view) and `teammates.sql` (`teammates` view) being present in the database.
