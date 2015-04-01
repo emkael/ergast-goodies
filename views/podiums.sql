@@ -39,3 +39,13 @@ CREATE VIEW non_champion_nationality_podiums AS
             WHERE year < races.year
          ) AND position IN (1,2,3)
    );
+
+-- driver list by podium count
+DROP VIEW IF EXISTS podium_count;
+CREATE VIEW podium_count AS
+   SELECT drivers.driverId, CONCAT(drivers.forename, ' ', drivers.surname) name,
+          COUNT(DISTINCT(results.raceId)) podium_count
+   FROM results JOIN drivers ON results.driverId = drivers.driverId
+   WHERE position IN (1,2,3)
+   GROUP BY results.driverId
+   ORDER BY COUNT(DISTINCT(results.raceId)) DESC;

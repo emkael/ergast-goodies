@@ -65,6 +65,8 @@ The third view, `non_champion_nationality_podiums` , produces a complete lists o
 
 [The last one was created to answer a question on r/F1Statistics](http://www.reddit.com/r/F1Statistics/comments/2kb6z3/question_for_the_last_16_years_the_championship/clk2wsl?context=2), as it's often the case with these snippets.
 
+There's also a summary view, `podium_count`, listing drivers by their podium count.
+
 `teammates.sql`
 ---------------
 
