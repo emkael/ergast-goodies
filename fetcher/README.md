@@ -12,7 +12,7 @@ Requirements
 
 Since this bash script simply stitches together some tools used to retrieve and unpack the database dump, it requires these to work properly:
 
-* pushd/pop for sane working directory management (the script works in its own directory)
+* pushd/popd for sane working directory management (the script works in its own directory)
 * wget
 * zcat
 * sed
