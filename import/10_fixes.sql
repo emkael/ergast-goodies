@@ -27,3 +27,57 @@ UPDATE results SET positionText = '14' WHERE resultId = 1152; -- Sato, Australia
 UPDATE results SET positionText = '11' WHERE resultId = 1149; -- Button, Australia 2005
 UPDATE results SET positionText = 'F' WHERE resultId = 2435; -- Fisichella, France 2002
 UPDATE results SET positionText = 'F' WHERE resultId = 4512; -- Montermini, Spain 1994
+
+
+UPDATE results SET `time` = '1:28:41.196' WHERE resultId = 20968; -- Alonso, Great Britain 2011
+UPDATE results SET milliseconds = milliseconds + 2 WHERE raceId = 849;
+UPDATE results SET `time` = '+1:00.665', milliseconds = 5381861 WHERE resultId = 20973; -- Rosberg, Great Britain 2011
+UPDATE results SET `time` = '+1:20.681', milliseconds = milliseconds + 81 WHERE resultId = 20979; -- Petrov, Great Britain 2011
+
+UPDATE results SET `time` = '1:37:30.344' WHERE resultId = 20992; -- Hamilton, Germany 2011
+UPDATE results SET milliseconds = milliseconds - 10 WHERE raceId = 850;
+
+UPDATE results SET `time` = '1:59:04.757' WHERE resultId = 21088; -- Vettel, Singapore 2011
+UPDATE results SET milliseconds = milliseconds + 2000 WHERE raceId = 854;
+
+UPDATE results SET `time` = '2:17:52.056' WHERE resultId = 21822; -- Rosberg, Monaco 2013
+UPDATE results SET milliseconds = milliseconds + 120000 WHERE raceId = 885;
+
+UPDATE results SET `time` = '1:41:14.711' WHERE resultId = 21888; -- Vettel, Germany 2013
+UPDATE results SET milliseconds = milliseconds + 5973000 WHERE raceId = 888;
+
+UPDATE results SET `time` = '1:39:17.148' WHERE resultId = 22086; -- Vettel, USA 2013
+UPDATE results SET milliseconds = milliseconds - 20 WHERE raceId = 898;
+
+UPDATE results SET `time` = '1:33:28.338' WHERE resultId = 22196; -- Hamilton, China 2014
+UPDATE results SET milliseconds = milliseconds - 50 WHERE raceId = 903;
+
+UPDATE results SET `time` = '+17.688', milliseconds = 9909500 WHERE resultId = 21259; -- Webber, Malaysia 2012
+UPDATE results SET `time` = '+20.076', milliseconds = 6378743 WHERE resultId = 21645; -- Kobayashi, Abu Dhabi 2012
+UPDATE results SET `time` = '+34.906', milliseconds = 6393573 WHERE resultId = 21651; -- Vergne, Abu Dhabi 2012
+
+-- http://ergast.com/mrd/bugs#comment-13577
+UPDATE qualifying SET q1 = '1:36.827' WHERE qualifyId = 409;
+UPDATE qualifying SET q1 = '1:17.806' WHERE qualifyId = 500;
+UPDATE qualifying SET q1 = NULL WHERE qualifyId = 1633;
+
+UPDATE results SET `time` = '1:29:16.660' WHERE resultId = 15520;
+UPDATE results SET milliseconds = milliseconds + 5356660 - 1757300 WHERE raceId = 628;
+
+UPDATE results SET `time` = '1:48:00.185' WHERE resultId = 5387;
+UPDATE results SET milliseconds = milliseconds + 6480185 - 60185 WHERE raceId = 266;
+
+UPDATE results SET `time` = '1:42:52.220' WHERE resultId = 13339;
+UPDATE results SET milliseconds = milliseconds + 6172220 - 6120220 WHERE raceId = 547;
+
+UPDATE results SET `time` = '1:24:38.200' WHERE resultId = 20539;
+UPDATE results SET milliseconds = milliseconds + 5078200 - 84200 WHERE raceId = 346;
+
+UPDATE results SET `time` = '1:27:38.864' WHERE resultId = 20563;
+UPDATE results SET milliseconds = milliseconds + 5258864 - 87684 WHERE raceId = 347;
+
+UPDATE results SET `time` = '1:29:04.268' WHERE resultId = 20611;
+UPDATE results SET milliseconds = milliseconds + 5344268 - 89268 WHERE raceId = 349;
+
+UPDATE results SET milliseconds = 11197800 WHERE resultId = 20291;
+UPDATE results SET `time` = '1:38:34.154' WHERE resultId = 4721;
