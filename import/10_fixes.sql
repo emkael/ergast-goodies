@@ -81,3 +81,5 @@ UPDATE results SET milliseconds = milliseconds + 5344268 - 89268 WHERE raceId = 
 
 UPDATE results SET milliseconds = 11197800 WHERE resultId = 20291;
 UPDATE results SET `time` = '1:38:34.154' WHERE resultId = 4721;
+
+UPDATE qualifying SET q2 = '1:22.285' WHERE qualifyId = 6484; -- Hamilton, 2015 Hungarian GP
