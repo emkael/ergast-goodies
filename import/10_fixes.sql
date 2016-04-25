@@ -83,3 +83,6 @@ UPDATE results SET milliseconds = 11197800 WHERE resultId = 20291;
 UPDATE results SET `time` = '1:38:34.154' WHERE resultId = 4721;
 
 UPDATE qualifying SET q2 = '1:22.285' WHERE qualifyId = 6484; -- Hamilton, 2015 Hungarian GP
+
+-- http://ergast.com/mrd/bugs/comment-page-3#comment-15065
+DELETE FROM drivers WHERE driverId = 809; -- Jose Maria Lopez
