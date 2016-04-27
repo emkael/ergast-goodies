@@ -43,4 +43,6 @@ All the script does is running all the `01?_*.sql` scripts against selected data
 
 Provided, there's also the `10_fixes.sql` SQL script. It contains fixes for factual errors in the database which have been [reported upstream](http://ergast.com/mrd/bugs), but are yet to have fixes available in the dump.
 
+Also, I've added dates of death for the `drivers` table - in `11_death_dates.sql` dump file.
+
 Note that some data in the original database could easily be normalized - countries, nationalities and such things would work beatifully in a dictionary. I've decided not to include any such normalization for backwards compatibility - all of the queries against the original, vanilla database, work identically against the tweaked database.
