@@ -86,3 +86,25 @@ UPDATE qualifying SET q2 = '1:22.285' WHERE qualifyId = 6484; -- Hamilton, 2015 
 
 -- http://ergast.com/mrd/bugs/comment-page-3#comment-15065
 DELETE FROM drivers WHERE driverId = 809; -- Jose Maria Lopez
+
+-- http://ergast.com/mrd/bugs/comment-page-3#comment-15072
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Martin_Donnelly_(racing_driver)' WHERE driverId = 151;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/David_Kennedy_(racing_driver)' WHERE driverId = 225;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Conny_Andersson_(racing_driver)' WHERE driverId = 260;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Alan_Rees_(racing_driver)' WHERE driverId = 390;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Bruce_Johnstone_(racing_driver)' WHERE driverId = 471;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Michael_May_(racing_driver)' WHERE driverId = 480;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Fred_Gamble_(racing_driver)' WHERE driverId = 545;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Justin_Wilson_(racing_driver)' WHERE driverId = 51;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/John_Love_(racing_driver)' WHERE driverId = 340;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Chris_Lawrence_(racing_driver)' WHERE driverId = 400;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Bob_Christie_(racing_driver)' WHERE driverId = 516;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Pat_Flaherty_(racing_driver)' WHERE driverId = 559;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Gerino_Gerini_(racing_driver)' WHERE driverId = 583;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Andy_Linden_(racing_driver)' WHERE driverId = 612;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Jack_McGrath_(racing_driver)' WHERE driverId = 658;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Travis_Webb' WHERE driverId = 677;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Joe_James_(racing_driver)' WHERE driverId = 728;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Leslie_Johnson_(racing_driver)' WHERE driverId = 790;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Oscar_Gonz%C3%A1lez_(racing_driver)' WHERE driverId = 806;
+UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Carlos_Pace' WHERE driverId = 250;
