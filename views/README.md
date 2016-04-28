@@ -22,7 +22,7 @@ Under the hood
 
 The convention for all the views is to use `underscored_lowercase_names` for views and newly added fields, to distinguish ergast-goodies input from the original structure (which uses `camelCase` naming).
 
-The views are split into files, which are fully independent, i.e. refer only to the original tables (or to each other, but only in order they're defined within the file), with the exception of `champion_teammates.sql`, which depends on both `champions.sql` and `teammates.sql`.
+The views are split into files, which are fully independent, i.e. refer only to the original tables (or to each other, but only in order they're defined within the file), with the exception of `champion_teammates.sql`, which depends on both `champions.sql` and `teammates.sql` and `dead_vs_living.sql`, which depends on `career_length.sql` and [`11_death_dates`](../import/11_death_dates.sql) extension.
 
 `career_length.sql`
 -------------------
@@ -44,6 +44,17 @@ Based on two other helper views: `debut_dates` and `last_race_dates`, listing ra
 Two views resulting in a list of World Drivers' Champions and World Constructors' Champions for each season, copying all the fields from drivers/constructors tables from original database, with the addition of the season of championship.
 
 Views assume ascending chronological order of raceId values for races in each season, and could be improved (but probably with a drop of performance) to select "last race of the season" (for which the standings are taken) by date.
+
+`dead_vs_living.sql`
+--------------------
+
+Two views showing stats regarding driver lifespan.
+
+`dead_vs_living` counts the tallies of dead drivers vs. living drivers, at the time of each race date.
+
+`debut_age_vs_lifespan` shows average driver age (current age for living drivers, age of death for dead) vs. average debut age for each race date.
+
+Both views require importing death dates from the [`11_death_dates.sql`](../import/11_death_dates.sql) extension, as well as `debut_age` view from `career_length.sql`.
 
 `full_season_drivers.sql`
 -------------------------
