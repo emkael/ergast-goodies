@@ -36,6 +36,8 @@ Simple view which lists career length stats for each driver:
 
 [You can use these to produce such stats, for example.](http://www.reddit.com/r/formula1/comments/2xr3tw/who_do_you_think_will_get_their_first_win_next/cp2sjp2?context=1)
 
+Based on two other helper views: `debut_dates` and `last_race_dates`, listing race dates for each drivers' first and last entry.
+
 `champions.sql`
 ---------------
 
