@@ -108,3 +108,7 @@ UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Joe_James_(racing_driver)
 UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Leslie_Johnson_(racing_driver)' WHERE driverId = 790;
 UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Oscar_Gonz%C3%A1lez_(racing_driver)' WHERE driverId = 806;
 UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Carlos_Pace' WHERE driverId = 250;
+
+-- http://ergast.com/mrd/bugs/comment-page-3#comment-15202
+UPDATE qualifying SET driverId = 47, number = 12 WHERE qualifyId IN (4019, 4038); -- Baumgartner
+UPDATE qualifying SET number = 4 WHERE qualifyId = 4025; -- Gene
