@@ -111,4 +111,83 @@ UPDATE drivers SET url = 'http://en.wikipedia.org/wiki/Carlos_Pace' WHERE driver
 
 -- http://ergast.com/mrd/bugs/comment-page-3#comment-15202
 UPDATE qualifying SET driverId = 47, number = 12 WHERE qualifyId IN (4019, 4038); -- Baumgartner
-UPDATE qualifying SET number = 4 WHERE qualifyId = 4025; -- Gene
+
+
+UPDATE qualifying SET number = 4 WHERE qualifyId = 4025; -- 2003 Italian Grand Prix, Gene
+UPDATE qualifying SET number = 21 WHERE qualifyId = 478; -- 2007 Monaco Grand Prix, Albers
+UPDATE qualifying SET number = 10 WHERE qualifyId = 507; -- 2007 United States Grand Prix, Vettel
+UPDATE qualifying SET number = 21 WHERE qualifyId = 588; -- 2007 European Grand Prix, Winkelhock
+UPDATE qualifying SET number = 19 WHERE qualifyId = 608; -- 2007 Hungarian Grand Prix, Vettel
+UPDATE qualifying SET number = 21 WHERE qualifyId = 610; -- 2007 Hungarian Grand Prix, Yamamoto
+UPDATE qualifying SET number = 19 WHERE qualifyId = 628; -- 2007 Turkish Grand Prix, Vettel
+UPDATE qualifying SET number = 21 WHERE qualifyId = 630; -- 2007 Turkish Grand Prix, Yamamoto
+UPDATE qualifying SET number = 19 WHERE qualifyId = 648; -- 2007 Italian Grand Prix, Vettel
+UPDATE qualifying SET number = 21 WHERE qualifyId = 654; -- 2007 Italian Grand Prix, Yamamoto
+UPDATE qualifying SET number = 19 WHERE qualifyId = 670; -- 2007 Belgian Grand Prix, Vettel
+UPDATE qualifying SET number = 21 WHERE qualifyId = 675; -- 2007 Belgian Grand Prix, Yamamoto
+UPDATE qualifying SET number = 19 WHERE qualifyId = 684; -- 2007 Japanese Grand Prix, Vettel
+UPDATE qualifying SET number = 21 WHERE qualifyId = 698; -- 2007 Japanese Grand Prix, Yamamoto
+UPDATE qualifying SET number = 19 WHERE qualifyId = 715; -- 2007 Chinese Grand Prix, Vettel
+UPDATE qualifying SET number = 21 WHERE qualifyId = 720; -- 2007 Chinese Grand Prix, Yamamoto
+UPDATE qualifying SET number = 19 WHERE qualifyId = 733; -- 2007 Brazilian Grand Prix, Vettel
+UPDATE qualifying SET number = 17 WHERE qualifyId = 739; -- 2007 Brazilian Grand Prix, Nakajima
+UPDATE qualifying SET number = 21 WHERE qualifyId = 742; -- 2007 Brazilian Grand Prix, Yamamoto
+UPDATE qualifying SET number = 7 WHERE qualifyId = 759; -- 2006 Bahrain Grand Prix, R. Schumacher
+UPDATE qualifying SET number = 23 WHERE qualifyId = 852; -- 2006 European Grand Prix, Montagny
+UPDATE qualifying SET number = 23 WHERE qualifyId = 873; -- 2006 Spanish Grand Prix, Montagny
+UPDATE qualifying SET number = 23 WHERE qualifyId = 894; -- 2006 Monaco Grand Prix, Montagny
+UPDATE qualifying SET number = 23 WHERE qualifyId = 917; -- 2006 British Grand Prix, Montagny
+UPDATE qualifying SET number = 23 WHERE qualifyId = 940; -- 2006 Canadian Grand Prix, Montagny
+UPDATE qualifying SET number = 23 WHERE qualifyId = 962; -- 2006 United States Grand Prix, Montagny
+UPDATE qualifying SET number = 4 WHERE qualifyId = 970; -- 2006 French Grand Prix, de la Rosa
+UPDATE qualifying SET number = 23 WHERE qualifyId = 983; -- 2006 French Grand Prix, Montagny
+UPDATE qualifying SET number = 4 WHERE qualifyId = 993; -- 2006 German Grand Prix, de la Rosa
+UPDATE qualifying SET number = 23 WHERE qualifyId = 1005; -- 2006 German Grand Prix, Yamamoto
+UPDATE qualifying SET number = 4 WHERE qualifyId = 1011; -- 2006 Hungarian Grand Prix, de la Rosa
+UPDATE qualifying SET number = 17 WHERE qualifyId = 1016; -- 2006 Hungarian Grand Prix, Kubica
+UPDATE qualifying SET number = 23 WHERE qualifyId = 1028; -- 2006 Hungarian Grand Prix, Yamamoto
+UPDATE qualifying SET number = 17 WHERE qualifyId = 1037; -- 2006 Turkish Grand Prix, Kubica
+UPDATE qualifying SET number = 4 WHERE qualifyId = 1040; -- 2006 Turkish Grand Prix, de la Rosa
+UPDATE qualifying SET number = 23 WHERE qualifyId = 1049; -- 2006 Turkish Grand Prix, Yamamoto
+UPDATE qualifying SET number = 17 WHERE qualifyId = 1056; -- 2006 Italian Grand Prix, Kubica
+UPDATE qualifying SET number = 4 WHERE qualifyId = 1057; -- 2006 Italian Grand Prix, de la Rosa
+UPDATE qualifying SET number = 23 WHERE qualifyId = 1072; -- 2006 Italian Grand Prix, Yamamoto
+UPDATE qualifying SET number = 4 WHERE qualifyId = 1079; -- 2006 Chinese Grand Prix, de la Rosa
+UPDATE qualifying SET number = 17 WHERE qualifyId = 1081; -- 2006 Chinese Grand Prix, Kubica
+UPDATE qualifying SET number = 15 WHERE qualifyId = 1082; -- 2006 Chinese Grand Prix, Doornbos
+UPDATE qualifying SET number = 23 WHERE qualifyId = 1091; -- 2006 Chinese Grand Prix, Yamamoto
+UPDATE qualifying SET number = 17 WHERE qualifyId = 1106; -- 2006 Japanese Grand Prix, Kubica
+UPDATE qualifying SET number = 4 WHERE qualifyId = 1107; -- 2006 Japanese Grand Prix, de la Rosa
+UPDATE qualifying SET number = 15 WHERE qualifyId = 1112; -- 2006 Japanese Grand Prix, Doornbos
+UPDATE qualifying SET number = 23 WHERE qualifyId = 1116; -- 2006 Japanese Grand Prix, Yamamoto
+UPDATE qualifying SET number = 17 WHERE qualifyId = 1125; -- 2006 Brazilian Grand Prix, Kubica
+UPDATE qualifying SET number = 4 WHERE qualifyId = 1128; -- 2006 Brazilian Grand Prix, de la Rosa
+UPDATE qualifying SET number = 15 WHERE qualifyId = 1131; -- 2006 Brazilian Grand Prix, Doornbos
+UPDATE qualifying SET number = 23 WHERE qualifyId = 1137; -- 2006 Brazilian Grand Prix, Yamamoto
+ALTER TABLE results CHANGE number number INT(11) NULL DEFAULT NULL;
+UPDATE results SET number = NULL WHERE resultId = 20322; -- 1963 South African Grand Prix, Hailwood
+UPDATE results SET number = NULL WHERE resultId = 17716; -- 1962 French Grand Prix, Marsh
+UPDATE results SET number = NULL WHERE resultId = 17717; -- 1962 French Grand Prix, Davis
+UPDATE results SET number = NULL WHERE resultId = 17718; -- 1962 French Grand Prix, Abate
+UPDATE results SET number = NULL WHERE resultId = 17719; -- 1962 French Grand Prix, Burgess
+UPDATE results SET number = NULL WHERE resultId = 17940; -- 1961 French Grand Prix, Bordeu
+UPDATE results SET number = 12 WHERE resultId = 19941; -- 1951 British Grand Prix, González
+UPDATE results SET number = 2 WHERE resultId = 19942; -- 1951 British Grand Prix, Fangio
+UPDATE results SET number = 10 WHERE resultId = 19943; -- 1951 British Grand Prix, Villoresi
+UPDATE results SET number = 4 WHERE resultId = 19944; -- 1951 British Grand Prix, Bonetto
+UPDATE results SET number = 6 WHERE resultId = 19945; -- 1951 British Grand Prix, Parnell
+UPDATE results SET number = 3 WHERE resultId = 19946; -- 1951 British Grand Prix, Sanesi
+UPDATE results SET number = 7 WHERE resultId = 19947; -- 1951 British Grand Prix, Walker
+UPDATE results SET number = 9 WHERE resultId = 19948; -- 1951 British Grand Prix, Shawe Taylor
+UPDATE results SET number = 14 WHERE resultId = 19949; -- 1951 British Grand Prix, Whitehead
+UPDATE results SET number = 22 WHERE resultId = 19950; -- 1951 British Grand Prix, Rosier
+UPDATE results SET number = 8 WHERE resultId = 19951; -- 1951 British Grand Prix, Gerard
+UPDATE results SET number = 18 WHERE resultId = 19952; -- 1951 British Grand Prix, Hamilton
+UPDATE results SET number = 25 WHERE resultId = 19953; -- 1951 British Grand Prix, Claes
+UPDATE results SET number = 1 WHERE resultId = 19954; -- 1951 British Grand Prix, Farina
+UPDATE results SET number = 5 WHERE resultId = 19955; -- 1951 British Grand Prix, Kelly
+UPDATE results SET number = 11 WHERE resultId = 19956; -- 1951 British Grand Prix, Ascari
+UPDATE results SET number = 17 WHERE resultId = 19957; -- 1951 British Grand Prix, Fotheringham-Parker
+UPDATE results SET number = 15 WHERE resultId = 19958; -- 1951 British Grand Prix, Murray
+UPDATE results SET number = 23 WHERE resultId = 19959; -- 1951 British Grand Prix, Chiron
+UPDATE results SET number = 16 WHERE resultId = 19960; -- 1951 British Grand Prix, James
