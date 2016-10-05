@@ -191,3 +191,7 @@ UPDATE results SET number = 17 WHERE resultId = 19957; -- 1951 British Grand Pri
 UPDATE results SET number = 15 WHERE resultId = 19958; -- 1951 British Grand Prix, Murray
 UPDATE results SET number = 23 WHERE resultId = 19959; -- 1951 British Grand Prix, Chiron
 UPDATE results SET number = 16 WHERE resultId = 19960; -- 1951 British Grand Prix, James
+
+-- http://ergast.com/mrd/bugs/#comment-15534
+UPDATE races SET name = REPLACE(name, 'GP', 'Grand Prix') WHERE name LIKE '%GP%';
+UPDATE races SET name = REPLACE(name, 'Belgium', 'Belgian') WHERE `name` LIKE 'Belgium%';
