@@ -110,3 +110,10 @@ A single view presenting double-WDC teammate pairings (for drivers with WDC titl
 [Example use](http://www.reddit.com/r/formula1/comments/2yfm53/ive_matured_says_hamilton_as_he_uses_ferrari_as_a/cp95w6y?context=1).
 
 Depends on both `champions.sql` (`world_drivers_champions` view) and `teammates.sql` (`teammates` view) being present in the database.
+
+`youngest_oldest.sql`
+---------------------
+
+A summary of youngest and oldest drivers entered in each season, along with combining it with drivers' first/last seasons.
+
+Note that this relies on birth dates for the drivers, which are a bit wonky in the original DB, but are corrected, as much as it's possible and reliable, in the [DB fixes](../import/10_fixes.sql).
