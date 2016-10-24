@@ -191,3 +191,35 @@ UPDATE results SET number = 17 WHERE resultId = 19957; -- 1951 British Grand Pri
 UPDATE results SET number = 15 WHERE resultId = 19958; -- 1951 British Grand Prix, Murray
 UPDATE results SET number = 23 WHERE resultId = 19959; -- 1951 British Grand Prix, Chiron
 UPDATE results SET number = 16 WHERE resultId = 19960; -- 1951 British Grand Prix, James
+
+UPDATE drivers SET url = NULL, dob = '1945-09-03', dod = '2009-03-19' WHERE driverId = 452; -- Thomas Monarch
+UPDATE drivers SET dob = '1980-08-06' WHERE driverId = 24; -- Vitantonio Liuzzi
+UPDATE drivers SET dob = '1974-03-29' WHERE driverId = 48; -- Marc Gene
+UPDATE drivers SET dob = '1969-11-19' WHERE driverId = 113; -- Philippe Adams
+UPDATE drivers SET dob = '1954-04-17' WHERE driverId = 119; -- Riccardo Patrese
+UPDATE drivers SET dob = '1962-10-05' WHERE driverId = 121; -- Michael Andretti
+UPDATE drivers SET dob = '1959-07-20' WHERE driverId = 132; -- Giovanna Amati
+UPDATE drivers SET dob = '1934-05-13' WHERE driverId = 310; -- Paddy Driver
+UPDATE drivers SET dob = '1940-10-02' WHERE driverId = 330; -- Nanni Galli
+UPDATE drivers SET dob = '1936-07-07' WHERE driverId = 346; -- Jo Siffert
+UPDATE drivers SET dob = '1941-08-30' WHERE driverId = 363; -- Ignazio Giunti
+UPDATE drivers SET dob = '1933-03-04' WHERE driverId = 425; -- Nino Vaccarella
+UPDATE drivers SET dob = '1930-07-06' WHERE driverId = 437; -- Ian Burgess
+UPDATE drivers SET dob = '1926-05-15' WHERE driverId = 448; -- Peter Broeker
+UPDATE drivers SET dob = '1920-06-01' WHERE driverId = 474; -- Syd van der Vyver
+UPDATE drivers SET dob = '1920-04-05' WHERE driverId = 491; -- Alfonso Thiele
+UPDATE drivers SET dob = '1921-06-04' WHERE driverId = 503; -- Ettore Chimeri
+UPDATE drivers SET dob = '1925-10-02' WHERE driverId = 510; -- Paul Goldsmith
+UPDATE drivers SET dob = '1927-05-28' WHERE driverId = 527; -- Eddie Sachs
+UPDATE drivers SET dob = '1915-03-23' WHERE driverId = 546; -- Arthur Owen
+UPDATE drivers SET dob = '1933-04-24' WHERE driverId = 595; -- Billy Garrett
+UPDATE drivers SET dob = '1932-10-21' WHERE driverId = 607; -- Cesare Perdisa
+UPDATE drivers SET dob = '1921-02-22' WHERE driverId = 613; -- Marshall Teague
+UPDATE drivers SET dob = '1928-06-05' WHERE driverId = 620; -- Umberto Maglioli
+UPDATE drivers SET dob = '1929-08-08' WHERE driverId = 653; -- Jimmy Davies
+UPDATE drivers SET dob = '1923-06-06' WHERE driverId = 727; -- Jim Rigsby
+UPDATE drivers SET dob = '1896-12-28' WHERE driverId = 741; -- Philippe Etancelin
+UPDATE drivers SET dob = '1909-01-01' WHERE driverId = 754; -- Marcel Balsa
+UPDATE drivers SET dob = '1913-12-15' WHERE driverId = 796; -- Walt Ader
+UPDATE drivers SET dob = '1989-08-28' WHERE driverId = 822; -- Valtteri Bottas
+UPDATE drivers SET dob = '1993-01-22' WHERE driverId = 837; -- Rio Haryanto
