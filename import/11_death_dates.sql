@@ -72,6 +72,7 @@ UPDATE drivers SET dod = "2009-04-26" WHERE driverId = 805; -- Danny Kladis
 UPDATE drivers SET dod = "2009-03-30" WHERE driverId = 334; -- Jackie Pretorius
 UPDATE drivers SET dod = "2009-03-24" WHERE driverId = 753; -- Hans Klenk
 UPDATE drivers SET dod = "2009-03-23" WHERE driverId = 494; -- Lloyd Ruby
+UPDATE drivers SET dod = "2009-03-19" WHERE driverId = 452; -- Thomas Monarch
 UPDATE drivers SET dod = "2009-02-01" WHERE driverId = 535; -- Jim McWithey
 UPDATE drivers SET dod = "2009-01-28" WHERE driverId = 711; -- Oswald Karch
 UPDATE drivers SET dod = "2008-12-19" WHERE driverId = 368; -- Sam Tingle
@@ -363,7 +364,6 @@ UPDATE drivers SET dod = "1965-05-20" WHERE driverId = 431; -- Edgar Barth
 UPDATE drivers SET dod = "1965-01-01" WHERE driverId = 415; -- Ray Reed
 UPDATE drivers SET dod = "1964-08-02" WHERE driverId = 430; -- Carel Godin de Beaufort
 UPDATE drivers SET dod = "1964-05-30" WHERE driverId = 527; -- Eddie Sachs
-UPDATE drivers SET dod = "1964-04-01" WHERE driverId = 452; -- Thomas Monarch
 UPDATE drivers SET dod = "1964-02-28" WHERE driverId = 470; -- Timmy Mayer
 UPDATE drivers SET dod = "1964-01-07" WHERE driverId = 686; -- Reg Parnell
 UPDATE drivers SET dod = "1963-11-28" WHERE driverId = 766; -- Lee Wallard

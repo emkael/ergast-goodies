@@ -192,7 +192,7 @@ UPDATE results SET number = 15 WHERE resultId = 19958; -- 1951 British Grand Pri
 UPDATE results SET number = 23 WHERE resultId = 19959; -- 1951 British Grand Prix, Chiron
 UPDATE results SET number = 16 WHERE resultId = 19960; -- 1951 British Grand Prix, James
 
-UPDATE drivers SET url = NULL, dob = '1945-09-03', dod = '2009-03-19' WHERE driverId = 452; -- Thomas Monarch
+UPDATE drivers SET url = NULL, dob = '1945-09-03' WHERE driverId = 452; -- Thomas Monarch
 UPDATE drivers SET dob = '1980-08-06' WHERE driverId = 24; -- Vitantonio Liuzzi
 UPDATE drivers SET dob = '1974-03-29' WHERE driverId = 48; -- Marc Gene
 UPDATE drivers SET dob = '1969-11-19' WHERE driverId = 113; -- Philippe Adams
