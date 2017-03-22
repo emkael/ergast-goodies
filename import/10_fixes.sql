@@ -227,3 +227,7 @@ UPDATE drivers SET dob = '1993-01-22' WHERE driverId = 837; -- Rio Haryanto
 -- http://ergast.com/mrd/bugs/comment-page-4/#comment-16190
 DELETE FROM constructorStandings WHERE constructorStandingsId = 24518;
 DELETE FROM driverStandings WHERE driverStandingsId IN (7118, 7149, 7180, 7211, 7243);
+
+-- http://ergast.com/mrd/bugs/comment-page-4/#comment-17613
+UPDATE results SET grid = 12 WHERE resultId = 3666; -- 1998 Australian GP, Jean Alesi
+UPDATE results SET grid = 15 WHERE resultId = 3667; -- 1998 Australian GP, Jarno Trulli
