@@ -224,11 +224,5 @@ UPDATE drivers SET dob = '1913-12-15' WHERE driverId = 796; -- Walt Ader
 UPDATE drivers SET dob = '1989-08-28' WHERE driverId = 822; -- Valtteri Bottas
 UPDATE drivers SET dob = '1993-01-22' WHERE driverId = 837; -- Rio Haryanto
 
--- http://ergast.com/mrd/bugs/comment-page-4/#comment-17613
-UPDATE results SET grid = 12 WHERE resultId = 3666; -- 1998 Australian GP, Jean Alesi
-UPDATE results SET grid = 15 WHERE resultId = 3667; -- 1998 Australian GP, Jarno Trulli
-
+-- http://ergast.com/mrd/bugs/comment-page-4/#comment-17714
 UPDATE results SET grid = 22 WHERE resultId = 8388; -- 1989 Spanish GP, Eddie Cheever
-
--- http://ergast.com/mrd/bugs/comment-page-4/#comment-17694
-UPDATE drivers SET number = 2 WHERE driverId = 838; -- Vandoorne
