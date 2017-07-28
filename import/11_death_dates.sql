@@ -1,4 +1,5 @@
 ALTER TABLE drivers ADD dod DATE NULL AFTER dob;
+UPDATE drivers SET dod = "2017-07-26" WHERE driverId = 316; -- Leo Kinnunen
 UPDATE drivers SET dod = "2017-04-05" WHERE driverId = 441; -- Tim Parnell
 UPDATE drivers SET dod = "2017-04-03" WHERE driverId = 540; -- Mike Taylor
 UPDATE drivers SET dod = "2017-03-19" WHERE driverId = 707; -- Ian Stewart
