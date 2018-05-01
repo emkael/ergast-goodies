@@ -11,6 +11,7 @@ UPDATE drivers SET dod = "2017-03-12" WHERE driverId = 258; -- Patrick Neve
 UPDATE drivers SET dod = "2017-03-10" WHERE driverId = 341; -- John Surtees
 UPDATE drivers SET dod = "2017-01-23" WHERE driverId = 563; -- Chuck Weyant
 UPDATE drivers SET dod = "2016-08-03" WHERE driverId = 278; -- Chris Amon
+UPDATE drivers SET dod = "2016-06-28" WHERE driverId = 603; -- André Guelfi
 UPDATE drivers SET dod = "2016-05-21" WHERE driverId = 292; -- Eddie Keizan
 UPDATE drivers SET dod = "2016-03-31" WHERE driverId = 318; -- Bertil Roos
 UPDATE drivers SET dod = "2016-01-18" WHERE driverId = 617; -- Mike MacDowel
