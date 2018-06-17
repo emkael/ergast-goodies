@@ -37,10 +37,12 @@ ALTER TABLE pitStops
 ALTER TABLE qualifying
    ADD INDEX position (position);
 
+-- Default value compatibility
+ALTER TABLE `races` CHANGE `date` `date` DATE NULL DEFAULT NULL;
 -- Indexes for table races
 ALTER TABLE races
    ADD INDEX year (year),
-   ADD INDEX date (date);
+   ADD INDEX `date` (`date`);
 
 -- Indexes for table results
 ALTER TABLE results
