@@ -348,6 +348,7 @@ UPDATE drivers SET dod = "1971-01-10" WHERE driverId = 363; -- Ignazio Giunti
 UPDATE drivers SET dod = "1970-09-05" WHERE driverId = 358; -- Jochen Rindt
 UPDATE drivers SET dod = "1970-06-21" WHERE driverId = 361; -- Piers Courage
 UPDATE drivers SET dod = "1970-06-02" WHERE driverId = 360; -- Bruce McLaren
+UPDATE drivers SET dod = "1970-05-08" WHERE driverId = 415; -- Ray Reed
 UPDATE drivers SET dod = "1969-09-02" WHERE driverId = 435; -- Willy Mairesse
 UPDATE drivers SET dod = "1969-02-08" WHERE driverId = 442; -- Kurt Kuhnke
 UPDATE drivers SET dod = "1969-08-01" WHERE driverId = 423; -- Gerhard Mitter
@@ -375,7 +376,6 @@ UPDATE drivers SET dod = "1966-04-07" WHERE driverId = 433; -- Walt Hansgen
 UPDATE drivers SET dod = "1966-04-04" WHERE driverId = 556; -- Jimmy Daywalt
 UPDATE drivers SET dod = "1966-03-09" WHERE driverId = 649; -- Pablo Birger
 UPDATE drivers SET dod = "1965-05-20" WHERE driverId = 431; -- Edgar Barth
-UPDATE drivers SET dod = "1965-01-01" WHERE driverId = 415; -- Ray Reed
 UPDATE drivers SET dod = "1964-08-02" WHERE driverId = 430; -- Carel Godin de Beaufort
 UPDATE drivers SET dod = "1964-05-30" WHERE driverId = 527; -- Eddie Sachs
 UPDATE drivers SET dod = "1964-02-28" WHERE driverId = 470; -- Timmy Mayer
