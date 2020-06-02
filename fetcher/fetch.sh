@@ -15,5 +15,10 @@ if [[ f1db.sql.gz -nt f1db.sql ]]; then
     zcat f1db.sql.gz | sed 's/ ENGINE=MyISAM//' > f1db.sql
     find -name f1db.sql.gz -printf '%f: %Td-%Tm-%TY %TH:%TM, %s bytes\n'
     touch -r f1db.sql.gz f1db.sql
+    if [ "$1" == "dump" ]
+    then
+        cp f1db.sql ../dump/original.sql
+        ../dump/convert.sh ../dump/original.sql > ../dump/sqlite.sql
+    fi
 fi
 popd > /dev/null
