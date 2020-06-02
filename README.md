@@ -11,6 +11,7 @@ The set consists of three tools:
 1. [fetcher](fetcher/README.md) - keeps your copy of the DB dump up to date
 2. [import](import/README.md) - allows you to import the database with some tweaks and integrity fixes
 3. [views](views/README.md) - a collection of useful or interesting database views, aggregating certain statistics
+4. dump - conversion script from original dump to SQLite3-compatible dump
 
 Please refer to specific README files for details on the tools.
 
