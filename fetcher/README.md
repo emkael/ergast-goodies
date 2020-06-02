@@ -26,7 +26,7 @@ Usage
 
 Just run `fetcher.sh`.
 
-The script takes no arguments.
+The script takes an optional `dump` argument. If present, MySQL dump is converted into SQLite3-compatible dump (hopefully) - but only if there's a new version on the dump.
 
 Under the hood
 ==============
