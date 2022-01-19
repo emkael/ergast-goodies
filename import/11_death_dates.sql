@@ -12,6 +12,7 @@ UPDATE drivers SET dod = "2021-03-08" WHERE driverId = 465; -- Keith Greene
 UPDATE drivers SET dod = "2021-02-20" WHERE driverId = 354; -- Chris Craft
 UPDATE drivers SET dod = "2021-01-27" WHERE driverId = 167; -- Adrian Campos
 UPDATE drivers SET dod = "2021-01-13" WHERE driverId = 248; -- Gimax
+UPDATE drivers SET dod = "2020-11-11" WHERE driverId = 445; -- Gunther Seiffert
 UPDATE drivers SET dod = "2020-08-31" WHERE driverId = 567; -- Fritz d'Orey
 UPDATE drivers SET dod = "2020-08-17" WHERE driverId = 432; -- Mario de Cabral
 UPDATE drivers SET dod = "2020-08-11" WHERE driverId = 614; -- Don Edmunds
@@ -301,7 +302,7 @@ UPDATE drivers SET dod = "1985-08-12" WHERE driverId = 181; -- Manfred Winkelhoc
 UPDATE drivers SET dod = "1985-07-02" WHERE driverId = 259; -- David Purley
 UPDATE drivers SET dod = "1985-05-10" WHERE driverId = 780; -- Toni Branca
 UPDATE drivers SET dod = "1985-04-03" WHERE driverId = 752; -- Helmut Niedermayr
-UPDATE drivers SET dod = "1984-11-25" WHERE driverId = 799; -- Jimmy Jackson
+UPDATE drivers SET dod = "1984-11-24" WHERE driverId = 799; -- Jimmy Jackson
 UPDATE drivers SET dod = "1984-09-08" WHERE driverId = 593; -- Johnnie Parsons
 UPDATE drivers SET dod = "1984-08-11" WHERE driverId = 754; -- Marcel Balsa
 UPDATE drivers SET dod = "1984-05-20" WHERE driverId = 701; -- Bill Holland
